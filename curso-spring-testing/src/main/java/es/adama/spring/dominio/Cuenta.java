@@ -1,6 +1,7 @@
 package es.adama.spring.dominio;
 
 import javax.persistence.Entity;
+import javax.persistence.GenerationType;
 import javax.persistence.Table;
 import javax.persistence.Id;
 import javax.persistence.GeneratedValue;
@@ -15,7 +16,7 @@ import javax.validation.constraints.Min;
 public class Cuenta {
 
 	@Id
-	@GeneratedValue(strategy = AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "numero_cuenta")
 	private Long numeroCuenta;
 	

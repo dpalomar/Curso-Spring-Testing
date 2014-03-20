@@ -16,15 +16,15 @@ import es.adama.spring.repositorios.CuentaRepository;
 @Service
 public class CuentaServicioImpl implements CuentaServicio {
 
-    @Autowired
+  
     private final CuentaRepository cuentaRepository;
 
-    
 
+    
+    @Autowired
     CuentaServicioImpl(CuentaRepository cuentaRepository) {
         this.cuentaRepository = cuentaRepository;
     }
-
 
     /* (non-Javadoc)
 	 * @see es.adama.spring.servicios.CuentaServicio#get(java.lang.Long)
